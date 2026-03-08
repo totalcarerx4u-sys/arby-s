@@ -159,6 +159,31 @@ async def scan_progress():
     return StreamingResponse(event_stream(), media_type="text/event-stream")
 
 
+@app.get("/api/raw-markets")
+async def serve_raw_markets():
+    """Serves all discovered markets as a direct JSON download for Cloud GPU processing."""
+    markets = get_cached_markets()
+    if not markets:
+        return {"error": "No markets currently cached. Wait for fetching to complete."}
+    return markets
+
+@app.post("/api/cloud-results")
+async def receive_cloud_results(results: List[Dict[str, Any]]):
+    """Receives parsed and matched arbitrage pairs from the Cloud GPU notebook."""
+    from backend.scanner import _all_opportunities
+    _all_opportunities.clear()
+    _all_opportunities.extend(results)
+    
+    scan_state = get_scan_state()
+    scan_state["progress"] = 100
+    scan_state["phase"] = "Cloud match complete"
+    scan_state["status"] = "complete"
+    scan_state["message"] = f"Cloud GPU found {len(results)} opportunities!"
+    scan_state["pairs_found"] = len(results)
+    
+    return {"status": "success", "imported": len(results)}
+
+
 @app.get("/api/scanner-config")
 async def get_scanner_config():
     return {"autoScan": get_auto_scan()}
