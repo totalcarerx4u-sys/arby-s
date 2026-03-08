@@ -1,0 +1,159 @@
+{
+  "markets": [
+    {
+      "conid": 733131966,
+      "exchange": "FORECASTX",
+      "name": "US House of Representatives Control",
+      "strike_count": 2,
+      "strikes": [
+        {
+          "strike_label": "Democratic",
+          "measured_period": "Nov'26",
+          "conid_yes": 762089343,
+          "conid_no": 762089344,
+          "last_trade_time": 1798955940,
+          "expiration": "20270104",
+          "strike": 1.0,
+          "underlying_conid": 733131966
+        },
+        {
+          "strike_label": "Republican",
+          "measured_period": "Nov'26",
+          "conid_yes": 773659700,
+          "conid_no": 773659707,
+          "last_trade_time": 1798955940,
+          "expiration": "20270104",
+          "strike": 2.0,
+          "underlying_conid": 733131966
+        }
+      ],
+      "symbol": "HORC",
+      "logo_category": "g17460",
+      "product_conid": 733131971
+    },
+    {
+      "conid": 11004968,
+      "exchange": "FORECASTX",
+      "name": "S&P 500 Futures Price",
+      "strike_count": 83,
+      "strikes": [
+        {
+          "strike_label": "Above 6,550",
+          "measured_period": "Dec31'26",
+          "conid_yes": 773081649,
+          "conid_no": 773081652,
+          "last_trade_time": 1799010000,
+          "expiration": "20270104",
+          "strike": 6550.0,
+          "underlying_conid": 649180684
+        },
+        {
+          "strike_label": "Above 6,600",
+          "measured_period": "Mar31'26",
+          "conid_yes": 773081418,
+          "conid_no": 773081423,
+          "last_trade_time": 1774987200,
+          "expiration": "20260401",
+          "strike": 6600.0,
+          "underlying_conid": 649180678
+        }
+      ],
+      "symbol": "FES",
+      "logo_category": "g21390",
+      "product_conid": 772194420
+    },
+    {
+      "conid": 726203945,
+      "exchange": "FORECASTX",
+      "name": "Canada Consumer Price Index",
+      "strike_count": 91,
+      "strikes": [
+        {
+          "strike_label": "Above 1.4%",
+          "measured_period": "Mar'26",
+          "conid_yes": 779321599,
+          "conid_no": 779321601,
+          "last_trade_time": 1776688200,
+          "expiration": "20260420",
+          "strike": 1.4,
+          "underlying_conid": 726203945
+        },
+        {
+          "strike_label": "Above 1.0%",
+          "measured_period": "Mar'26",
+          "conid_yes": 787532402,
+          "conid_no": 787532407,
+          "last_trade_time": 1776688200,
+          "expiration": "20260420",
+          "strike": 1.0,
+          "underlying_conid": 726203945
+        }
+      ],
+      "symbol": "CACPI",
+      "logo_category": "g17457",
+      "product_conid": 726203948
+    },
+    {
+      "conid": 773080482,
+      "exchange": "FORECASTX",
+      "name": "Canada Unemployment Rate",
+      "strike_count": 35,
+      "strikes": [
+        {
+          "strike_label": "Above 6.8%",
+          "measured_period": "Feb'26",
+          "conid_yes": 837151420,
+          "conid_no": 837151425,
+          "last_trade_time": 1773405000,
+          "expiration": "20260313",
+          "strike": 6.8,
+          "underlying_conid": 773080482
+        },
+        {
+          "strike_label": "Above 7.0%",
+          "measured_period": "Feb'26",
+          "conid_yes": 837151428,
+          "conid_no": 837151435,
+          "last_trade_time": 1773405000,
+          "expiration": "20260313",
+          "strike": 7.0,
+          "underlying_conid": 773080482
+        }
+      ],
+      "symbol": "CAUNR",
+      "logo_category": "g17466",
+      "product_conid": 773080487
+    },
+    {
+      "conid": 798087648,
+      "exchange": "FORECASTX",
+      "name": "Bank of Canada Decision",
+      "strike_count": 15,
+      "strikes": [
+        {
+          "strike_label": "No change",
+          "measured_period": "Mar18'26",
+          "conid_yes": 835882307,
+          "conid_no": 835882310,
+          "last_trade_time": 1773841500,
+          "expiration": "20260318",
+          "strike": 3.0,
+          "underlying_conid": 798087648
+        },
+        {
+          "strike_label": "Lower 25bps",
+          "measured_period": "Mar18'26",
+          "conid_yes": 835882313,
+          "conid_no": 835882316,
+          "last_trade_time": 1773841500,
+          "expiration": "20260318",
+          "strike": 4.0,
+          "underlying_conid": 798087648
+        }
+      ],
+      "symbol": "CADEC",
+      "logo_category": "g13834",
+      "product_conid": 798087653
+    }
+  ]
+}

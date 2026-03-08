@@ -1,0 +1,58 @@
+﻿git.exe : remote: 
+error: Trace: 2e0b76889
+3ba73064bdc672f8b3c8ef5
+79e6064037078732aa934ef
+806440842        
+At line:1 char:11
++ $output = & 
+"C:\Program 
+Files\Git\cmd\git.exe" 
+push --force -u origin 
+...
++           ~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (remote: error   
+ : ...6440842          
+  :String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+remote: error: See 
+https://gh.io/lfs for 
+more information.      
+  
+remote: error: File 
+backend/arbitrage.db 
+is 102.58 MB; this 
+exceeds GitHub's file 
+size limit of 100.00 
+MB        
+remote: error: File 
+backend/arbitrage.db 
+is 101.55 MB; this 
+exceeds GitHub's file 
+size limit of 100.00 
+MB        
+remote: error: GH001: 
+Large files detected. 
+You may want to try 
+Git Large File Storage 
+- https://git-lfs.githu
+b.com.        
+To https://github.com/t
+otalcarerx4u-sys/arby-s
+.git
+ ! [remote rejected] 
+main -> main 
+(pre-receive hook 
+declined)
+error: failed to push 
+some refs to 'https://g
+ithub.com/totalcarerx4u
+-sys/arby-s.git'
